@@ -1,8 +1,13 @@
 import BurpleSlider from '@components/BurpleSlider';
-import '@styles/globals.css'
+import '@styles/globals.css';
 
 function Application({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <BurpleSlider />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default Application
+export default Application;
